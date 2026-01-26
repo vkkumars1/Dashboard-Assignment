@@ -4,9 +4,9 @@
   "description": "Dashboard builder POC root",
   "main": "backend/src/server.ts",
   "scripts": {
-    "dev": "npx tsx watch backend/src/server.ts",
+    "dev": "node backend/src/server.ts",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npx tsx backend/src/server.ts",
+    "start": "node backend/src/server.ts",
     "test": "npx jest",
     "lint": "npx eslint backend/src"
   },
