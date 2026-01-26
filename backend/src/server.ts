@@ -102,7 +102,7 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 })
 
 // Wildcard route to serve index.html for SPA routing
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(frontendPath, 'index.html'))
 })
 
