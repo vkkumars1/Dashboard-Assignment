@@ -1,14 +1,14 @@
 {
-  "name": "dashboard-builder-backend",
+  "name": "dashboard-builder-poc",
   "version": "1.0.0",
-  "description": "Backend for dashboard builder POC",
+  "description": "Dashboard builder POC root",
   "main": "backend/src/server.ts",
   "scripts": {
     "dev": "npx tsx watch backend/src/server.ts",
-    "build": "npm install && npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npx tsx backend/src/server.ts",
-    "test": "jest",
-    "lint": "eslint backend/src"
+    "test": "npx jest",
+    "lint": "npx eslint backend/src"
   },
   "keywords": [],
   "author": "",
