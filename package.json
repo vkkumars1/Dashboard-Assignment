@@ -4,7 +4,7 @@
   "description": "Dashboard builder POC root",
   "main": "backend/src/server.ts",
   "scripts": {
-    "dev": "npx tsx watch backend/src/server.ts",
+    "dev": "nodemon --exec npx tsx backend/src/server.ts",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npx tsx backend/src/server.ts",
     "test": "npx jest",
@@ -16,7 +16,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.22.1",
-    "nodemon": "^3.1.11",
     "tsx": "^4.7.0",
     "zod": "^3.22.4"
   },
@@ -26,6 +25,7 @@
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.6",
     "jest": "^29.7.0",
+    "nodemon": "^3.1.11",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   }
