@@ -5,9 +5,9 @@
   "type": "module",
   "main": "src/server.ts",
   "scripts": {
-    "dev": "tsx watch backend/src/server.ts",
+    "dev": "nodemon --exec tsx backend/src/server.ts",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "tsx backend/src/server.ts",
+    "start": "nodemon --exec tsx backend/src/server.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src"
@@ -18,8 +18,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "zod": "^3.22.4",
-    "tsx": "^4.7.0"
+    "nodemon": "^3.1.11",
+    "tsx": "^4.7.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
