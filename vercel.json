@@ -3,10 +3,23 @@
     "builds": [
         {
             "src": "backend/src/server.ts",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "frontend/out/**"
+                ]
+            }
         }
     ],
     "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "backend/src/server.ts"
+        },
+        {
+            "src": "/_next/(.*)",
+            "dest": "backend/src/server.ts"
+        },
         {
             "src": "/(.*)",
             "dest": "backend/src/server.ts"

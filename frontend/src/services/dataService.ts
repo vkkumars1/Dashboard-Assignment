@@ -3,7 +3,7 @@ import type { WidgetDataResponse, WidgetState } from '../types/widget.types'
 // Fetches data from backend and handles caching/retry logic
 // Keeps API calls organized in one place
 
-const API_BASE = process.env.REACT_APP_API_URL || 'https://dashboard-assignment-ochre.vercel.app/'
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || ''
 
 interface FetchOptions {
   retries?: number

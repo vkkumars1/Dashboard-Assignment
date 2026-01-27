@@ -6,7 +6,7 @@
   "main": "backend/src/server.ts",
   "scripts": {
     "dev": "npx nodemon --exec npx tsx backend/src/server.ts",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && echo 'Build complete'",
     "start": "npx tsx backend/src/server.ts",
     "test": "npx jest",
     "lint": "npx eslint backend/src"
