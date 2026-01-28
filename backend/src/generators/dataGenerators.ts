@@ -1,4 +1,4 @@
-import type { BarChartData, LineChartData, TreemapData, ScatterData } from '../types/widgetTypes'
+import type { BarChartData, LineChartData, TreemapData, ScatterData } from '../types/widgetTypes.js'
 
 // Mock data generators - these can be replaced with real APIs later
 // Keeping them separate so it's obvious where data comes from

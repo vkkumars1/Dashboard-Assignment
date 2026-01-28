@@ -1,6 +1,6 @@
-import type { WidgetDataResponse, WidgetType } from '../types/widgetTypes'
-import { getGenerator, type GeneratorType } from '../generators/dataGenerators'
-import { WidgetDataResponseSchema } from '../schemas/widgetSchemas'
+import type { WidgetDataResponse, WidgetType } from '../types/widgetTypes.js'
+import { getGenerator, type GeneratorType } from '../generators/dataGenerators.js'
+import { WidgetDataResponseSchema } from '../schemas/widgetSchemas.js'
 import { ZodError } from 'zod'
 
 // Single service responsible for:

@@ -122,7 +122,8 @@ app.get(/.*/, (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`[server] Unified Dashboard running on http://localhost:${PORT}`)
+  const host = process.env.NODE_ENV === 'production' ? 'https://dashboard-assignment-1.onrender.com' : `http://localhost:${PORT}`;
+  console.log(`[server] Unified Dashboard running on ${host}`)
 })
 
 export default app
