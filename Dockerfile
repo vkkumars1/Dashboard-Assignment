@@ -13,7 +13,7 @@ COPY backend/package*.json ./
 RUN npm install
 COPY backend/ ./
 # Ensure TypeScript is compiled
-RUN npx tsc
+RUN npm run build
 
 # Final Production Stage
 FROM node:20-alpine
