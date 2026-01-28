@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: dashboard-app
+    env: docker
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    plan: free
+    region: ohio
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PORT
+        value: 8000
+      - key: NODE_ENV
+        value: production
